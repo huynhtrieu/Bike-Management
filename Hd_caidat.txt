@@ -1,0 +1,5 @@
+Hướng dẫn cài đặt chương trình
+Source code được nén, để chạy chương trình hoàn chỉnh chúng ta thực hiện theo các bước:
+- Đầu tiên giải nén file DATN-102190386-Source.rar
+- Backend: Tiếp theo cd đến thư mục bike-management-system, ở thư mục gốc của mã nguồn chạy lệnh npm install để cài đặt những gói, thư viện liên quan cần thiết. Sau đó, bật MongoDB tạo cơ sở dữ liệu, rồi vào sao chép file .env.example thành file mới tên .env trong mã nguồn để thay đổi các thông tin kết nối cho đúng với cơ sở dữ liệu vừa tạo. Cuối cùng chạy lệnh npm run start-dev để chạy chương trình backend lên.
+- Frontend: Tiếp theo cd đến thư mục bike-management-fe, ở thư mục gốc của mã nguồn chạy lệnh npm install để cài đặt những gói, thư viện liên quan cần thiết.Sau đó sao chép file .env.local thành file mới tên .env trong mã nguồn để thay đổi các thông tin kết nối cho đúng với cơ sở dữ liệu vừa tạo Cuối cùng chạy lệnh npm run start để chạy chương trình lên.
