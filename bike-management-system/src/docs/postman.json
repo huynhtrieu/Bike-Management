@@ -1,0 +1,305 @@
+{
+  "info": {
+    "_postman_id": "8f2bebd6-bce1-4ddb-a07e-a5ed6e0b1d1e",
+    "name": "BikeManagement",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17367085"
+  },
+  "item": [
+    {
+      "name": "Create Role",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"user\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/roles",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "roles"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register Account",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"nhatnguyen5220000@gmail.com\",\n    \"password\": \"nguyendang52\",\n    \"name\": \"nguyen\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/auth/register",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "auth", "register"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"nhatnguyen522000@gmail.com\",\n    \"password\": \"nguyendang522\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/auth/login",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "auth", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Category - get all category",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/categories",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "categories"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Category - get category by name",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/categories/name/coffee",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "categories", "name", "coffee"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Category - get category by id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/categories/6430e7d73650ca7e87054a8b",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "categories", "6430e7d73650ca7e87054a8b"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Category - Create category",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"coffee\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/categories",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "categories"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bike - get all bike",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/bikes",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "bikes"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bike - get all bike by bike id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/bikes/64311ecb59f8da6136566555",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "bikes", "64311ecb59f8da6136566555"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bike - get all bike by category id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/bikes/category/643124406c2b03b074ec550a",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "bikes", "category", "643124406c2b03b074ec550a"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bike - Create a bike",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": [
+                "/Users/nguyen.dangn/Downloads/kitten.png",
+                "/Users/nguyen.dangn/Downloads/map.jpeg"
+              ]
+            },
+            {
+              "key": "name",
+              "value": "xe bus4",
+              "type": "text"
+            },
+            {
+              "key": "quantity",
+              "value": "10",
+              "type": "text"
+            },
+            {
+              "key": "price",
+              "value": "10000",
+              "type": "text"
+            },
+            {
+              "key": "categoryName",
+              "value": "coffee",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:8080/api/bikes",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "bikes"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
